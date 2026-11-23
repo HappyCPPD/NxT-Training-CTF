@@ -1,0 +1,32 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tissue Packet &middot; NxT CTF</title><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Space+Grotesk:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/style.css"></head><body><a href="../" style="display:block;padding:7px 16px;background:#17141c;border-bottom:1px solid #272231;color:#f2f0f4;font:600 13px/1.5 'IBM Plex Mono',ui-monospace,monospace;text-decoration:none">&larr; All NxT CTF sessions</a>
+<header class="top"><a class="brand" href="index.html"><svg width="24" height="24" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2l12 7v14l-12 7L4 23V9z" fill="#08070a" stroke="#e6293f" stroke-width="2"/><path d="M11 22V10l10 12V10" fill="none" stroke="#f2f0f4" stroke-width="2.2" stroke-linejoin="round"/></svg><span>NxT CTF</span></a><nav><a href="index.html">Board</a><a href="writeups/">Writeups</a><a href="slides/">Slides</a><a href="demo/">Demo kit</a></nav></header>
+<main class="board">
+  <section class="hero">
+    <p class="eyebrow">NxT CTF session 2 &middot; practice board</p>
+    <h1>Tissue Packet Pte. Ltd.</h1>
+    <p>Every challenge is set at one terrible startup. The company is always wrong. Hints are free, and your progress is saved in this browser.</p>
+    <div class="score" aria-live="polite"><b id="points">0</b><span>points</span><b id="solved">0</b><span id="solved-label">solved</span>
+      <button class="ghost" id="reset">Reset progress</button></div>
+  </section>
+  <div id="categories"></div>
+</main>
+<dialog id="challenge" aria-labelledby="c-name">
+  <button class="close" id="close" aria-label="Close">&times;</button>
+  <p class="eyebrow" id="c-meta"></p>
+  <h2 id="c-name"></h2>
+  <div class="desc" id="c-desc"></div>
+  <div class="files" id="c-files"></div>
+  <div class="hints" id="c-hints"></div>
+  <form id="flag-form" autocomplete="off">
+    <label for="flag">Flag</label>
+    <div class="row"><input id="flag" name="flag" placeholder="NxT{...}" spellcheck="false" required><button class="btn">Submit</button></div>
+    <p id="result" role="status"></p>
+  </form>
+  <p class="wlink"><a id="c-writeup" href="#">Stuck? Read the writeup</a></p>
+</dialog>
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body></html>

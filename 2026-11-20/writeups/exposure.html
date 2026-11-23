@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Exposure writeup &middot; NxT CTF</title><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Space+Grotesk:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../assets/style.css"></head><body>
+<header class="top"><a class="brand" href="../index.html"><svg width="24" height="24" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2l12 7v14l-12 7L4 23V9z" fill="#08070a" stroke="#e6293f" stroke-width="2"/><path d="M11 22V10l10 12V10" fill="none" stroke="#f2f0f4" stroke-width="2.2" stroke-linejoin="round"/></svg><span>NxT CTF</span></a><nav><a href="../index.html">Board</a><a href="../writeups/">Writeups</a><a href="../slides/">Slides</a><a href="../demo/">Demo kit</a></nav></header>
+<main class="prose"><p class="eyebrow">forensics &middot; 100 pts</p>
+<h1>Exposure</h1><p><a href="../index.html#exposure">Try the challenge first</a></p>
+<details class="spoiler"><summary>Reveal the writeup (contains the flag)</summary><p>The floor looks pitch black, but the <strong>blue channel</strong> there is lifted by 1 to 3 levels (out of 255) in the shape of a sticky note and a tissue packet. Your eyes can't see a change that small, especially in blue. Photopea → Image → Adjustments → <strong>Levels</strong>, set the channel to Blue, drag the right input slider down to about 10. Now the floor reads <code>NxT{nothing_to_see_here}</code>, next to tissue packet <strong>#6</strong>.</p>
+<p><strong>Takeaway:</strong> "too dark to see" is a human limit, not a computer one. Every pixel is a number, so stretch the numbers.</p></details>
+<nav class="pager"><a href="flatline.html">&larr; Flatline</a><a href="thumbsup.html">Thumbs Up &rarr;</a></nav></main></body></html>

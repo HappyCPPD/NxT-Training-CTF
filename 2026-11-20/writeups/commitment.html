@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Commitment Issues writeup &middot; NxT CTF</title><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Space+Grotesk:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../assets/style.css"></head><body>
+<header class="top"><a class="brand" href="../index.html"><svg width="24" height="24" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2l12 7v14l-12 7L4 23V9z" fill="#08070a" stroke="#e6293f" stroke-width="2"/><path d="M11 22V10l10 12V10" fill="none" stroke="#f2f0f4" stroke-width="2.2" stroke-linejoin="round"/></svg><span>NxT CTF</span></a><nav><a href="../index.html">Board</a><a href="../writeups/">Writeups</a><a href="../slides/">Slides</a><a href="../demo/">Demo kit</a></nav></header>
+<main class="prose"><p class="eyebrow">osint &middot; 200 pts</p>
+<h1>Commitment Issues</h1><p><a href="../index.html#commitment">Try the challenge first</a></p>
+<details class="spoiler"><summary>Reveal the writeup (contains the flag)</summary><p><code>codeberg.org/tinymedev/tinyme</code>. A later commit removed <code>killswitch.py</code>, but git keeps every version. Click <strong>Commits</strong>, open "Add killswitch.py", and the file is there: <code>NxT{git_never_forgets}</code>.</p>
+<p><strong>Takeaway:</strong> deleting a secret from a repo doesn't delete it from the history. Real companies leak passwords and keys this way every week. The fix is to change the secret, not delete the file.</p></details>
+<nav class="pager"><a href="pastetense.html">&larr; Paste Tense</a><a href="chope.html">Chope &rarr;</a></nav></main></body></html>
